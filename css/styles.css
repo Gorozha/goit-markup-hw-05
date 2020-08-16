@@ -120,9 +120,9 @@ header*/
     width: 153px;
     padding-left: 0px;
     margin-right: 85px;
-
     text-decoration: none;
     font-weight: 700;
+    align-self: center;
 }
 /* header */
 .logo {
@@ -156,14 +156,14 @@ header*/
 /* header */
 .nav-links {
     display: flex;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;    
-    color: var(--dark-color);       
+    color: var(--dark-color); 
+    align-self: center;      
 }
 /* header */
 .nav-links .link {
@@ -185,43 +185,59 @@ header*/
 /* header */
  .adr {
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
     margin-left: 305px;
     margin-right: 0;
     align-items: center;
 }
 /* header */
-.adr-mail {
+/*.adr-mail {
     width: 162px;
     padding-top: 32px;
     padding-right: 30px;
     padding-bottom: 32px;
-}
+}*/
 .pin {
-   /* display: inline-flex;
-    align-items: center;*/
-    margin-right: 30px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* width: 162px;*/
+    padding-top: 32px;
+    padding-right: 0;
+    padding-bottom: 32px;
+    margin-right: 60px;
     color: black;
     text-decoration: none;
     cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 .pin::before {
     content: "";
-    width: 16px;
+    /*width: 16px;*/
     height: 11px;
     background-image: url("./images/symbol-defs.svg#icon-envelope");
     background-size: contain;
 }
 .key {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     color: black;
     text-decoration: none;
     cursor: pointer;
+   /* width: 142px;*/
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0;
+    margin-right: 0;
 }
 .key::before {
     content: "";
-    width: 10px;
+   /* width: 10px;*/
     height: 15px;
     background-image: url("./images/symbol-defs.svg#icon-smartphone");
     background-size: contain;
@@ -251,13 +267,13 @@ header*/
     margin-right: 10px;
 }
 /* header */
-.adr-tel {
+/*.adr-tel {
     width: 142px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 0;
     margin-right: 0;
-}
+}*/
 /* header */
 .adr .adr-mail,
 .adr .adr-tel {
