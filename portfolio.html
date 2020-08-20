@@ -17,18 +17,20 @@
                             <a class="logotype" href="/">
                                 <span class="logo">Web</span> 
                                 <span class="log"> Studio</span>
-                            </a>                                    
+                            </a>
+                                                                
                             <ul class="nav-links list">
                                 <li class="menu">
-                                    <a href="./index.html"class ="link" >Студия</a>
+                                    <a href="./index.html"class ="link">Студия</a>
                                  </li>
                                 <li class="menu">
-                                    <a href="#" class="link" >Портфолио</a>
+                                    <a href="#" class="link current" >Портфолио</a>
                                 </li>
                                 <li class="menu">
                                     <a href="#" class="link" >Контакты</a>
                                 </li>
                             </ul>
+                            
                         </nav>
                         <div class="adr">                       
                             <a class="pin" href="mailto:info@devstudio.com" >                                                          
@@ -227,5 +229,18 @@
                 </div>
             </div>
         </footer>
+     <script>
+         (() => {
+             document
+                .querySelector( '.js-speaker-form' )
+                .addEventListener( 'submit', e => {
+                    e.preventDefault( );
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                      console.log('${name}: ${value}'),
+                     );
+                });
+         })( );
+     </script>   
     </body>
 </html>

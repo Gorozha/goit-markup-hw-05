@@ -19,19 +19,24 @@
             <a class="logotype" href="/">
               <span class="logo">Web</span> 
               <span class="log"> Studio</span>
-            </a>       
-                      
+            </a>
+                                       
             <ul class="nav-links list">
+            <!--<li>
+              <a href="" class="link current">Features</a>
+            </li>-->
+
               <li class="menu">
-                <a href="#" class ="link">Студия</a>
+                <a href="#" class ="link current">Студия</a>
               </li>
               <li class="menu">
                 <a href="./portfolio.html" class="link" >Портфолио</a>
               </li>
               <li class="menu">
                 <a href="#" class="link">Контакты</a>
-              </li>
-            </ul>          
+              </li>              
+            </ul>
+                              
               <div class="adr">                              
                   <a class="pin" href="./images/symbol-defs1.svg#icon-infodevstudiocom" >
                    <svg class="let" width="16" height="11">
@@ -410,13 +415,59 @@
               </div>
           </div>
       </div>
+      <div class="form">
+        <form>
+          <label for="email">Подписаться</label>
+          <input type="email" name="email" id="email" />
+        </form>
+        <p class="">подпишитесь на россылку</p>
+      </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-close" data-modal-close>X</button>
       <p class="message">Оставте свои данные, мы вам перезвоним</p>
-    </div>
-  </div>
+    
+  
+  <form class="js-speaker-form" >
+    <label for="name">Имя</label>
+    <input type="text" name="user-name" id="name" placeholder="Your name" value="John" />
+
+    <label for="tel">Телефон</label>
+    <input type="tel" name="tel" id="tel" placeholder="Your tel" value="+380" />
+
+    <label for="email">Почта</label>
+    <input type="email" name="email" id="email" />
+  </form>
+
+    <label for="comment">Комментарий</label>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+    <button type="submit">Отправить</button>
+
+  
+  <!--<form action="#">
+    <input type="search" />
+    <input type="file" />
+    <input type="date" min="" max="" />
+    <input type="time" />
+    <input type="datetime-local" name="" id="" />
+    <input type="number" min="" max="" step=""/>
+  </form>
+  <form action="#">
+    <input type="range" max="" min="" step="" />
+  </form>
+  <form action="#">
+    <input type="checkbox" />
+    <fieldset></fieldset>
+    <input type="radio" checked />
+    <input type="radio" />
+    <input type="radio" />
+    <input type="radio" />
+  </form>-->
+</div>
+</div>
+
   <script src="./js/modal.js"></script>
   </body>
 </html>
