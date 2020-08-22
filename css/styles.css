@@ -1086,7 +1086,30 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
     color: var(--accent-color);
 }
-form {
+/*стилизация модалки*/
+.form {
+    width: 448px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    outline: 1px solid tomato;
+}
+/*стилизация модалки*/
+.form-field {
     display: flex;
-    
+    flex-direction: column;
+    /*outline:  1px solid rgba(33, 33, 33, 0.2);*/
+    margin-bottom: 10px;
+}
+/*стилизация модалки*/
+.form-field input {
+    margin: 0;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+/*стилизация модалки*/
+.form-field input::placeholder {
+    color: var(--main-color);
+    text-align: right;
 }
