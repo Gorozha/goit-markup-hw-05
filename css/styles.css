@@ -564,11 +564,11 @@ header*/
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 0;
+   /* padding: 0;
     margin-top: 20px;
     margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px;
+    margin-bottom: 4px;*/
+    /*margin-left: 24px;*/
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -599,13 +599,15 @@ header*/
     margin-bottom: 30px;
     outline: 1px solid #eeeeee;
 }
+/*портфолио оверлей*/
 .overlay {
     width: 370px;
     height: 294px;
     position: relative;
-   /* overflow: hidden;*/
+    overflow: hidden;
     opacity: 1;
 }
+/*портфолио оверлей*/
   .note  {
     /*content: "";*/
     position: absolute;
@@ -625,19 +627,11 @@ header*/
     transform: translateY(100%);
     opacity: 1;  
 }
- а:hover .note {  
-    transform: translateY(50%); 
+/* портфолио оверлей*/
+ .ss:hover .note {  
+    transform: translateY(0); 
 }
 
-/*.overlay:hover {
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);    
-  }*/
-/*.elements-projects:hover .note p,
-.elements-projects:focus .note p {
-    background-color: var(--white-color);
-    transform: translateY(50%);
-  }*/
 /* портфолио проэкты */
 .elements-projects:nth-child(3n) {
     margin-right: 0;
@@ -650,6 +644,24 @@ header*/
 .elements-projects:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+/* портфолио проэкты */
+.block {
+    width: 322px;
+    height: 70px;
+    margin: 20px 24px;
+}
+/* портфолио проэкты */
+.block h3 {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 4px;
+}
+/* портфолио проэкты */
+.block p {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 /* футер */
 .dark-background {
     background: #2F303A;
